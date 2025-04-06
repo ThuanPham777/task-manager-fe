@@ -14,7 +14,7 @@ body {
 .cardstyle {
     width: 40rem;
     height: 22rem;
-    background-color:#eddec79b; 
+    background-color:#eddec79b;
     border-radius: 15px;
 }
 @media (max-width: 768px) {
@@ -32,7 +32,7 @@ body {
 
 .btn-outline-success{
     height: min-content;
-    width: min-content;  
+    width: min-content;
 }
 
 .btn-outline-danger{
@@ -58,7 +58,7 @@ body {
     background-color: #FFFFFF90 !important;
     border-radius: 30px;
     padding: 10px;
-    border: none; 
+    border: none;
 }
 form {
     background-color: #b3c9cc31;
@@ -82,7 +82,7 @@ form {
     background-color:#ff6113;
     color:rgb(240, 236, 223);
     align-items: left !important;
-    
+
 }
 
 /*Title Task List*/
@@ -92,7 +92,7 @@ h1 {
     color: #09545d;
     font-size: 2.7em;
     letter-spacing: 0.2em;
-    
+
 }
 
 /*labels*/
@@ -114,14 +114,14 @@ select {
 .list-group{
     border-radius: 10px;
     padding: 80px;
-    
+
 }
 
 
 /*Display cards labels */
 .card-title{
     /* font-family:cursive; */
-    font-weight:bold; 
+    font-weight:bold;
     color:#09545d;
 }
 h6{
@@ -132,4 +132,3 @@ h6{
     /*font-family:initial;*/
     color: rgba(20, 20, 20, 0.787);
 }
-    

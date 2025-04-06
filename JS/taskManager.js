@@ -52,7 +52,6 @@ class TaskManager {
       }
       // Assuming the response is an array of task objects
       this.tasks = await response.json();
-      console.log('tasks', this.tasks);
       this.render();
     } catch (error) {
       console.error('Error loading tasks:', error);
@@ -157,7 +156,7 @@ class TaskManager {
         '/' +
         date.getFullYear();
       return createTaskHtml(
-        task._id,
+        task.id,
         task.name,
         task.description,
         task.assignedTo,

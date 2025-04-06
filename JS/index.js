@@ -261,13 +261,14 @@ let editTaskModal = new bootstrap.Modal(
 // Event delegation for task list buttons (including edit)
 taskList.addEventListener('click', (event) => {
   // Edit button event
+  console.log('tessstttt');
   if (event.target.classList.contains('edit-button')) {
     const parentTask = event.target.closest('[data-task-id]');
     const taskId = parentTask.dataset.taskId;
-    const task = taskManager.tasks.find((t) => t._id === taskId);
+    const task = taskManager.tasks.find((t) => t.id === Number(taskId));
     if (task) {
       // Populate modal fields with current task data
-      document.getElementById('editTaskId').value = task._id;
+      document.getElementById('editTaskId').value = task.id;
       document.getElementById('editTaskName').value = task.name;
       document.getElementById('editDescription').value = task.description;
       document.getElementById('editAssignedTo').value = task.assignedTo;
